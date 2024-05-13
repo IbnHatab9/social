@@ -1,0 +1,68 @@
+body{
+--White: hsl(0, 0%, 100%);
+--Grey: hsl(0, 0%, 20%);
+--Dark-Grey: hsl(0, 0%, 12%);
+--Off-Black: hsl(0, 0%, 8%);
+--Green: hsl(75, 94%, 57%);
+background-color: var(--Off-Black);
+display: flex;
+justify-content: center;
+align-items: center;
+min-height: 100vh;
+}
+@font-face{
+    font-family: myfont;
+    src: url(/assets/fonts/static/Inter-Regular.ttf);
+}
+*{
+    font-family: myfont !important;
+}
+.container{
+    width: 350px;
+    background-color: var(--Dark-Grey);
+    padding: 20px;
+    border-radius: 10px;
+}
+.photo{
+    margin: 0 auto;
+    text-align: center;
+}
+.photo img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+.photo h3 {
+    color: white;
+}
+.photo p{
+    color: yellowgreen;
+    font-weight: bolder;
+}
+.card{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.card button{
+    padding: 15px 25px;
+    margin-bottom: 10px;
+    border-radius: 6px;
+    outline: none;
+    box-shadow: none;
+    background-color:grey;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+}
+.card button:hover{
+    color:black;
+    background-color: greenyellow;
+}
+.card button:active{
+    outline: none;
+}
+.card p{
+    color: grey;
+}
